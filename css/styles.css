@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.title {
+  font-size: 48px;
+  font-family: 'Roboto', serif;
+  color: rgb(81, 81, 81);
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 110px 0px 110px 0px;
+}
+.title::after {
+  content: '';
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*technical*/
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.header-logo {
+  font-size: 30px;
+  font-family: 'Roboto', serif;
+  color: rgb(81, 81, 81);
+  line-height: 32px;
+  letter-spacing: 0.6px;
+  float: left;
+}
+.header-logo::first-letter {
+  color: rgb(26, 188, 156);
+}
+.nav-list {
+  float: right;
+  margin-top: 6px;
+}
+.nav-list-item {
+  float: left;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.nav-list-link {
+  font-family: 'OpenSans', sans-serif;
+  color: rgb(81, 81, 81);
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: bold;
+  letter-spacing: 0.28px;
+}
+
+.nav-list-link:hover {
+  color: rgb(26, 188, 156);
+}
+/*header*/
+.slider {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.45), rgb(0, 0, 0, 0.45)),
+    url('../img/slider-bcg.jpg');
+  background-size: cover;
+  height: 720px;
+}
+.slider-backgroud {
+}
+/*slider*/
+.new-colletion {
+  background-color: rgb(233, 240, 253);
+}
+/*new-collection*/
+.footer {
+  background-color: rgb(50, 50, 50);
+}
+.footer-content {
+  font-size: 16px;
+  font-family: 'OpenSans';
+  color: rgb(254, 254, 254);
+  line-height: 1.75;
+  text-align: center;
+  padding: 40px;
+}
+.green {
+  color: rgb(26, 188, 156);
+}
