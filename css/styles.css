@@ -104,7 +104,6 @@ a {
 .slider {
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
-  height: 720px;
   position: relative;
 }
 .slider-img-wraper {
@@ -112,6 +111,7 @@ a {
 }
 .slider-img {
   width: 100%;
+  height: auto;
 }
 .slider-overlay {
   background-color: rgba(0, 0, 2, 0.52);
@@ -126,7 +126,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -74%);
-  width: 730px;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
