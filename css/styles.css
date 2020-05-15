@@ -168,20 +168,22 @@ a {
   float: right;
   background-image: url(../img/next.png);
 }
+.slider-button:hover {
+  background-color: rgb(26, 188, 156);
+}
 /*slider*/
 .new-colection {
   background-color: rgb(233, 240, 253);
 }
 .card-wraper {
-  padding: 0px;
-  height: 400px;
+  margin-bottom: 100px;
+  height: 320px;
 }
 .card {
   width: 250px;
   height: 320px;
   float: left;
-  background-color:rgb(0, 0, 0);
-  );
+  background-color: rgb(0, 0, 0);
 }
 .card:hover {
   background: rgb(26, 188, 156);
@@ -211,8 +213,8 @@ a {
   float: right;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 12px;
-  width: 56px;
-  height: 44px;
+  width: 54px;
+  height: 40px;
 }
 .link-item {
   display: block;
@@ -223,10 +225,13 @@ a {
 }
 .card-image {
   height: 280px;
-  
 }
-.img-wraper{
+.img-wraper {
   position: relative;
+}
+.card:hover .overlay {
+  opacity: 1;
+  visibility: visible;
 }
 /*overlay*/
 .overlay {
@@ -234,37 +239,76 @@ a {
   border-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 250px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  visibility: hidden;
+  opacity: 1;
 }
 .social-links {
+  position: absolute;
+  left: 18%;
+  transform: translateX(-10%);
+  bottom: 70px;
 }
 .social-list-item-link {
   display: block;
   border-width: 1px;
-  background-color: rgb(26, 188, 156);
+  border-color: rgb(255, 255, 255);
   border-style: solid;
   width: 48px;
   height: 48px;
   background-repeat: no-repeat;
+  background-position: center;
+  margin: 7px;
 }
 .social-list-item {
+  float: left;
+  margin-right: px;
+}
+.social-list-item-link:hover {
+  background-color: rgb(26, 188, 156);
 }
 .social-list-item-link-hart {
   background-image: url(../img/hart.png);
 }
 .social-list-item-link-arrows {
-  background-image: url(../img/arows.png.png);
+  background-image: url(../img/arows.png);
 }
 .social-list-item-link-clock {
-  background-image: url(../img/clock.png.png);
+  background-image: url(../img/clock.png);
 }
-.social-list-item-link-clock {
+.social-list-item-link-cart {
   background-image: url(../img/cart.png);
-} /*new-collection*/
+  border-style: none;
+  float: left;
+  margin: 0;
+}
+.cart {
+  width: 172px;
+  height: 48px;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(50, 50, 50);
+  margin-left: 4%;
+}
+.button-text {
+  font-size: 14px;
+  font-family: 'OpenSans';
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 3.286;
+  text-align: center;
+  float: right;
+  margin-right: 20px;
+}
+.cart:hover {
+  background-color: rgb(26, 188, 156);
+}
+/*new-collection*/
 .footer {
   background-color: rgb(50, 50, 50);
 }
